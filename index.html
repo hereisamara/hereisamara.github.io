@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Khin Eaindray Htun's portfolio in AI, computer vision, machine learning, and data engineering." />
+  <title>Khin Eaindray Htun | AI & Data Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23bfd5c4'/%3E%3Cpath d='M14 48V16h8v13l12-13h11L31 30l15 18H35L25 36l-3 3v9z' fill='%231a1a18'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="paper-noise"></div>
+
+  <div class="container">
+
+    <!-- NAV -->
+    <header class="navbar">
+      <a href="#" class="logo">KHIN EAINDRAY HTUN<span class="scribble-dot">.</span></a>
+
+      <nav class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#experience">Experience</a>
+        <a href="https://github.com/hereisamara" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/khin-eaindray-htun" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <a href="khin-eaindray-htun-resume.pdf" target="_blank">Résumé ↗</a>
+      </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-main sketch-card">
+        <p class="eyebrow">AI · COMPUTER VISION · DATA ENGINEERING</p>
+
+        <div class="hero-title-wrap">
+          <h1>
+            I build intelligent systems from real-world
+            <span class="marker">data.</span>
+          </h1>
+
+          <div class="hand-note note-hero">
+            <span>from research to real systems :)</span>
+          </div>
+        </div>
+
+        <p class="hero-description">
+          I am an AI and data engineer pursuing a Master of
+          Engineering at KMUTT. I build computer-vision systems, reliable data
+          pipelines, and applied AI products that connect research with real use.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#work" class="button primary">View work</a>
+          <a href="khin-eaindray-htun-resume.pdf" class="button" download>Download résumé</a>
+        </div>
+      </div>
+
+
+      <aside class="current-card sketch-card">
+        <p class="eyebrow">CURRENT FOCUS</p>
+
+        <div>
+          <div class="doodle-icon">
+            <svg viewBox="0 0 110 90" aria-hidden="true">
+              <rect x="20" y="18" width="70" height="52" rx="5" />
+              <path d="M31 52 L44 40 L54 48 L72 31 L82 39" />
+              <circle cx="76" cy="30" r="4" />
+              <path d="M45 76 C54 80 66 80 75 76" />
+            </svg>
+          </div>
+
+          <h2>Applied AI + Autonomous Systems</h2>
+
+          <p>
+            Exploring machine learning, computer vision, simulation, and
+            scalable data systems through graduate study and applied research.
+          </p>
+        </div>
+
+        <p class="availability">
+          <span class="status-dot"></span>
+          Bangkok, Thailand
+        </p>
+
+        <div class="hand-note note-small">build, measure, improve</div>
+      </aside>
+
+    </section>
+
+
+    <!-- KPI -->
+    <section class="kpi-grid">
+
+      <article class="kpi-card sketch-card">
+        <span class="kpi-number">18</span>
+        <span class="kpi-label">Selected projects</span>
+        <span class="hand-note kpi-note">personal, paid contract & professional</span>
+      </article>
+
+      <article class="kpi-card sketch-card">
+        <span class="kpi-number">3</span>
+        <span class="kpi-label">Industry & research roles</span>
+      </article>
+
+      <article class="kpi-card sketch-card">
+        <span class="kpi-number">3.88</span>
+        <span class="kpi-label">Undergraduate CGPA</span>
+      </article>
+
+      <article class="kpi-card sketch-card">
+        <span class="kpi-number">99.83%</span>
+        <span class="kpi-label">Batch runtime reduction</span>
+        <span class="hand-note kpi-note">20 min → 2 sec</span>
+      </article>
+
+    </section>
+
+
+    <!-- DASHBOARD -->
+    <section class="section dashboard-grid">
+
+      <div class="sketch-card chart-card">
+        <p class="eyebrow">CORE SKILLS</p>
+
+        <div class="title-row">
+          <h2>Skills in practice</h2>
+          <span class="hand-note">general capability profile</span>
+        </div>
+
+        <div class="chart-wrap">
+          <canvas id="domainChart"></canvas>
+        </div>
+      </div>
+
+
+      <aside class="sketch-card capability-card">
+        <p class="eyebrow">CAPABILITY MAP</p>
+        <h2>What I work with</h2>
+
+        <div class="capability-list">
+          <div class="capability">
+            <span>Data Engineering</span>
+            <strong>SQL · Kubeflow · AWS</strong>
+          </div>
+
+          <div class="capability">
+            <span>Machine Learning & AI</span>
+            <strong>PyTorch · RAG · Boosting</strong>
+          </div>
+
+          <div class="capability">
+            <span>Computer Vision</span>
+            <strong>YOLO · OpenCV · RGB-D</strong>
+          </div>
+
+          <div class="capability">
+            <span>Backend & Integration</span>
+            <strong>Python · Flask · REST</strong>
+          </div>
+
+          <div class="capability">
+            <span>Analytics</span>
+            <strong>EDA · Power BI · Plotly</strong>
+          </div>
+        </div>
+
+        <div class="hand-note capability-note">
+          practical tools used across research and production
+        </div>
+      </aside>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="section" id="work">
+
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">PROJECT PORTFOLIO</p>
+          <h2>Projects</h2>
+          <div class="rough-underline"></div>
+        </div>
+
+        <div class="project-controls">
+          <div class="filters" aria-label="Filter projects by career direction">
+            <button class="filter active" data-filter="all">All directions</button>
+            <button class="filter" data-filter="data-scientist">Data Scientist</button>
+            <button class="filter" data-filter="data-engineer">Data Engineer</button>
+            <button class="filter" data-filter="ml-engineer">ML Engineer · Computer Vision</button>
+          </div>
+
+          <button
+            class="project-scope-toggle"
+            id="projectScopeToggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="projectGrid"
+          >
+            <span class="scope-open-label">More: paid & job projects</span>
+            <span class="scope-close-label">Show personal projects only</span>
+            <span class="scope-toggle-icon" aria-hidden="true">+</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+        <noscript>Please enable JavaScript to view the complete project portfolio.</noscript>
+      </div>
+
+    </section>
+
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+
+      <div class="section-header simple">
+        <div>
+          <p class="eyebrow">HOW I WORK</p>
+          <h2>From raw data to decision.</h2>
+          <div class="rough-underline short"></div>
+        </div>
+      </div>
+
+      <div class="process-canvas">
+
+        <div class="process-step sketch-card">
+          <span class="step-no">01</span>
+          <strong>Data</strong>
+          <p>APIs · SQL · files · images · telemetry</p>
+        </div>
+
+        <div class="process-arrow">
+          <svg viewBox="0 0 100 38" aria-hidden="true">
+            <path d="M5 21 C28 10, 60 12, 90 20" />
+            <path d="M81 13 L91 20 L81 27" />
+          </svg>
+        </div>
+
+        <div class="process-step sketch-card">
+          <span class="step-no">02</span>
+          <strong>Engineer</strong>
+          <p>pipelines · PostgreSQL · AWS · orchestration</p>
+        </div>
+
+        <div class="process-arrow">
+          <svg viewBox="0 0 100 38" aria-hidden="true">
+            <path d="M5 18 C32 25, 60 14, 90 19" />
+            <path d="M81 12 L91 19 L81 26" />
+          </svg>
+        </div>
+
+        <div class="process-step sketch-card accent-step">
+          <span class="step-no">03</span>
+          <strong>Explore</strong>
+          <p>EDA · data quality · patterns · constraints</p>
+        </div>
+
+        <div class="process-arrow">
+          <svg viewBox="0 0 100 38" aria-hidden="true">
+            <path d="M5 20 C33 11, 60 22, 90 19" />
+            <path d="M81 12 L91 19 L81 26" />
+          </svg>
+        </div>
+
+        <div class="process-step sketch-card">
+          <span class="step-no">04</span>
+          <strong>Model</strong>
+          <p>ML · computer vision · RAG · simulation</p>
+        </div>
+
+        <div class="process-arrow">
+          <svg viewBox="0 0 100 38" aria-hidden="true">
+            <path d="M5 18 C29 24, 64 11, 90 19" />
+            <path d="M81 12 L91 19 L81 26" />
+          </svg>
+        </div>
+
+        <div class="process-step sketch-card">
+          <span class="step-no">05</span>
+          <strong>Deliver</strong>
+          <p>APIs · edge AI · dashboards · evaluation</p>
+        </div>
+
+        <div class="hand-note process-note">this is usually not linear in real life ↑</div>
+      </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+
+      <div class="section-header simple">
+        <div>
+          <p class="eyebrow">EXPERIENCE</p>
+          <h2>Where the work happened.</h2>
+        </div>
+      </div>
+
+      <div class="experience-list">
+
+        <article class="experience-row">
+          <div class="experience-year">DEC 2023–PRESENT</div>
+          <div>
+            <h3>Research Member · Deep Learning Lab, KMUTT</h3>
+            <p>
+              Developed high-resolution crack and corrosion detection systems
+              using YOLO-based models for infrastructure inspection, including
+              industry-sponsored research and performance evaluation.
+            </p>
+
+            <details class="role-projects">
+              <summary>
+                <span class="role-open-label">View 3 job projects</span>
+                <span class="role-close-label">Close projects</span>
+                <span class="role-projects-icon" aria-hidden="true">+</span>
+              </summary>
+
+              <div class="role-project-list">
+                <div class="role-project-item">
+                  <strong>High-Resolution Crack Detection</strong>
+                  <span>Contract project · Skyller Co., Ltd.</span>
+                </div>
+                <div class="role-project-item">
+                  <strong>Real-Time Corrosion Detection & Classification</strong>
+                  <span>Contract project · Skyller Co., Ltd.</span>
+                </div>
+                <div class="role-project-item">
+                  <strong>Combined YOLO Corrosion Ensemble</strong>
+                  <span>Contract project · Skyller Co., Ltd.</span>
+                </div>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <article class="experience-row">
+          <div class="experience-year">JUN 2025–FEB 2026</div>
+          <div>
+            <h3>Software Engineer, AI/CV · Specific Impulse</h3>
+            <p>
+              Integrated DJI telemetry into a monitoring dashboard and developed real-time AI and 
+              edge-processing systems, including a 10 FPS panoramic stitching and streaming pipeline 
+              for high-resolution 2K imagery, YOLO-based object detection, and a 2.4 GHz LoRa transmission system 
+              deployed on an Orange Pi CM5.
+            </p>
+
+            <details class="role-projects">
+              <summary>
+                <span class="role-open-label">View 5 job projects</span>
+                <span class="role-close-label">Close projects</span>
+                <span class="role-projects-icon" aria-hidden="true">+</span>
+              </summary>
+
+              <div class="role-project-list">
+                <div class="role-project-item">
+                  <strong>DJI Dock & Aircraft Telemetry Integration</strong>
+                  <span>DJI Cloud APIs · telemetry · monitoring</span>
+                </div>
+                <div class="role-project-item">
+                  <strong>Real-Time Computer Vision & Image Pipeline</strong>
+                  <span>OpenCV · homography · 10 FPS processing</span>
+                </div>
+                <div class="role-project-item">
+                  <strong>Orange Pi CM5 Edge AI Deployment</strong>
+                  <span>Edge inference · deployment optimization</span>
+                </div>
+                <div class="role-project-item">
+                  <strong>LoRa Communication Experiments</strong>
+                  <span>Latency · packet loss · reliability</span>
+                </div>
+                <div class="role-project-item">
+                  <strong>Autonomous Drone Simulation & Sensor Data Pipeline</strong>
+                  <span>Isaac Sim · RGB-D data · HDF5 pipeline</span>
+                </div>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <article class="experience-row">
+          <div class="experience-year">JUN–OCT 2024</div>
+          <div>
+            <h3>Data Engineer Intern · Agoda</h3>
+            <p>
+              Optimized SQL-based Kubeflow workflows from 20 minutes to about
+              2 seconds, built automated pipeline housekeeping, and supported
+              Kubernetes-based production workflows.
+            </p>
+
+            <details class="role-projects">
+              <summary>
+                <span class="role-open-label">View 1 job project</span>
+                <span class="role-close-label">Close project</span>
+                <span class="role-projects-icon" aria-hidden="true">+</span>
+              </summary>
+
+              <div class="role-project-list">
+                <div class="role-project-item">
+                  <strong>Kubeflow Housekeeping Automation</strong>
+                  <span>SQL · Kubeflow · Kubernetes · S3 · VastFS</span>
+                </div>
+              </div>
+            </details>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="hand-note footer-note">numbers matter. context matters more.</div>
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+
+      <div class="section-header simple">
+        <div>
+          <p class="eyebrow">EDUCATION</p>
+          <h2>Learning in depth.</h2>
+        </div>
+      </div>
+
+      <div class="experience-list">
+        <article class="experience-row">
+          <div class="experience-year">AUG 2025–MAY 2027</div>
+          <div>
+            <h3>Master of Engineering · Electrical & Information Engineering</h3>
+            <p>King Mongkut's University of Technology Thonburi, Bangkok.</p>
+          </div>
+        </article>
+
+        <article class="experience-row">
+          <div class="experience-year">AUG 2022–MAY 2025</div>
+          <div>
+            <h3>Bachelor of Science · Computer Science</h3>
+            <p>King Mongkut's University of Technology Thonburi · CGPA 3.88.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="section contact-card sketch-card" id="contact">
+      <div>
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Have an AI, computer-vision, or data problem?</h2>
+      </div>
+
+      <div class="contact-actions">
+        <a class="button primary" href="mailto:khin_eaindray_htun@outlook.com">Send an email</a>
+        <a class="button" href="https://www.linkedin.com/in/khin-eaindray-htun" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="button" href="https://github.com/hereisamara" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+      <span>© 2026 KHIN EAINDRAY HTUN</span>
+      <span>HTML · CSS · JAVASCRIPT · CHART.JS</span>
+    </footer>
+
+  </div>
+</body>
+</html>
