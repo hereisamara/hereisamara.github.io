@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ezria project article: an AI-integrated learning assistant for study materials, schedules, exam planning, tasks, and progress tracking." />
+  <title>Ezria — AI-Integrated Study Assistant | Khin Eaindray Htun</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23bfd5c4'/%3E%3Cpath d='M14 48V16h8v13l12-13h11L31 30l15 18H35L25 36l-3 3v9z' fill='%231a1a18'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../article.css" />
+</head>
+<body class="article-page">
+  <div class="paper-noise"></div>
+
+  <div class="container article-shell">
+    <header class="navbar">
+      <a href="../index.html" class="logo">KHIN EAINDRAY HTUN<span class="scribble-dot">.</span></a>
+      <nav class="nav-links">
+        <a href="../index.html">Portfolio</a>
+        <a href="../index.html#work" aria-current="page">Work</a>
+        <a href="../index.html#process">Process</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../journey.html">Journey</a>
+
+        <a href="https://github.com/hereisamara" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/khin-eaindray-htun" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <a href="khin-eaindray-htun-resume.pdf" target="_blank">Résumé ↗</a>
+      </nav>
+    </header>
+
+    <main>
+      <nav class="article-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Portfolio</a>
+        <span>/</span>
+        <a href="../index.html#work">Projects</a>
+        <span>/</span>
+        <span aria-current="page">Ezria</span>
+      </nav>
+
+      <header class="article-masthead">
+        <p class="article-kicker">Senior Project · CS64-RE10 · KMUTT</p>
+        <h1>Ezria — AI-Integrated Study Assistant</h1>
+        <p class="article-deck">
+          One learning workspace for organizing study materials, managing
+          schedules, planning exams, tracking tasks, and measuring progress.
+        </p>
+      </header>
+
+      <div class="article-byline">
+        <span>Khin Eaindray Htun · Kyaw Swar Hein</span>
+        <span>School of Information Technology · KMUTT</span>
+      </div>
+
+      <div class="newspaper-grid">
+        <article class="article-copy">
+          <p class="article-intro">
+            Ezria—Education Zone for Resourceful Integration &amp; Assistance—is
+            an AI-integrated learning assistant created to reduce the friction of
+            using separate applications for materials, schedules, exam planning,
+            tasks, and study-progress tracking.
+          </p>
+
+          <section class="project-feature-board" aria-labelledby="ezria-features">
+            <p class="article-kicker" id="ezria-features">The learning workspace</p>
+            <div class="project-feature-grid">
+              <article>
+                <span>01</span>
+                <h2>Study materials</h2>
+                <p>Keep learning resources together and use the assistant to retrieve relevant context for grounded questions and explanations.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h2>Schedules &amp; exams</h2>
+                <p>Manage study schedules and exam planning without moving between separate planning applications.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h2>Tasks &amp; progress</h2>
+                <p>Use add-on tools to manage daily tasks and follow study progress from the same application.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="article-video-section" aria-labelledby="ezria-demo-title">
+            <p class="article-kicker">Project demonstration</p>
+            <h2 id="ezria-demo-title">See Ezria in action</h2>
+            
+            <div class="article-video-frame">
+              <iframe width="1048" height="590" src="https://www.youtube.com/embed/V-hTpv9-im0" title="[CS64-RE10] Ezria - Your Study Assistant" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <!-- <iframe
+                width="1048"
+                height="590"
+                src="https://www.youtube.com/embed/V-hTpv9-im0"
+                title="[CS64-RE10] Ezria - Your Study Assistant"
+                frameborder="0"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe> -->
+            </div>
+          </section>
+
+          <div class="article-columns">
+            <section>
+              <h2>The problem</h2>
+              <p>
+                Students often split their learning workflow across document
+                storage, calendars, task managers, and revision tools. Ezria was
+                designed around a single product surface so the information needed
+                for studying and the actions used to plan it stay connected.
+              </p>
+            </section>
+
+            <section>
+              <h2>The AI assistant</h2>
+              <p>
+                The assistant layer uses Python with Gemini and LangChain. Its
+                retrieval-augmented workflow brings relevant document context into
+                question answering, helping responses stay connected to the study
+                material supplied by the learner.
+              </p>
+            </section>
+
+            <section>
+              <h2>Application architecture</h2>
+              <p>
+                The mobile experience was built with Dart and Flutter. Go and
+                Python services supported the backend through Fiber and Flask,
+                separating the application APIs from the AI-oriented workflow.
+              </p>
+            </section>
+
+            <section>
+              <h2>Data layer</h2>
+              <p>
+                MongoDB and Firebase supported application storage, user data, and
+                authentication needs. This gave the team a practical foundation for
+                keeping learning content and account-level application data available
+                across the product.
+              </p>
+            </section>
+
+            <section>
+              <h2>Delivery environment</h2>
+              <p>
+                Services were containerized with Docker and Docker Compose, routed
+                through NGINX, and hosted on an Ubuntu-based SIT virtual machine.
+                The development workflow also used GitHub, Visual Studio Code,
+                Google Colab, Android Studio, and Postman.
+              </p>
+            </section>
+
+            <section>
+              <h2>Product design</h2>
+              <p>
+                Figma, Canva, Miro, Inkscape, and DaVinci Resolve supported the
+                interface, diagrams, presentation, graphics, and demonstration
+                materials used to communicate the project as a complete product.
+              </p>
+            </section>
+          </div>
+
+          <section class="article-citation project-source-note">
+            <p class="article-kicker">Source &amp; privacy note</p>
+            <p>
+              This case study summarizes the official KMUTT senior-project record
+              and the portfolio implementation. Public student identifiers and
+              university email addresses from the original record are intentionally
+              excluded.
+            </p>
+          </section>
+        </article>
+
+        <aside class="article-facts">
+          <p class="article-kicker">Project record</p>
+          <h2>Ezria at a glance</h2>
+          <dl class="fact-list">
+            <div>
+              <dt>Full name</dt>
+              <dd>Education Zone for Resourceful Integration &amp; Assistance</dd>
+            </div>
+            <div>
+              <dt>Project code</dt>
+              <dd>CS64-RE10</dd>
+            </div>
+            <div>
+              <dt>Institution</dt>
+              <dd>School of Information Technology, King Mongkut's University of Technology Thonburi</dd>
+            </div>
+            <div>
+              <dt>Core product</dt>
+              <dd>AI-integrated mobile learning assistant</dd>
+            </div>
+            <div>
+              <dt>Frontend</dt>
+              <dd>Dart · Flutter</dd>
+            </div>
+            <div>
+              <dt>Backend</dt>
+              <dd>Go · Python · Fiber · Flask</dd>
+            </div>
+            <div>
+              <dt>AI/ML</dt>
+              <dd>Python · Gemini · LangChain · NumPy</dd>
+            </div>
+            <div>
+              <dt>Data &amp; infrastructure</dt>
+              <dd>MongoDB · Firebase · NGINX · Docker · Linux</dd>
+            </div>
+            <div>
+              <dt>Project team</dt>
+              <dd>Khin Eaindray Htun · Kyaw Swar Hein</dd>
+            </div>
+            <div>
+              <dt>Advisors</dt>
+              <dd>Pornchai Mongkolnam · Tuul Triyason</dd>
+            </div>
+          </dl>
+
+          <div class="article-actions">
+            <a class="article-link" href="https://seniorproject.sit.kmutt.ac.th/showproject/CS64-RE10" target="_blank" rel="noreferrer">Official KMUTT record</a>
+            <a class="article-link" href="https://www.youtube.com/watch?v=V-hTpv9-im0" target="_blank" rel="noreferrer">Watch project demo</a>
+            <a class="article-link" href="https://github.com/Ezria-Study/Ezria-Demo" target="_blank" rel="noreferrer">Project repository</a>
+          </div>
+        </aside>
+      </div>
+
+      <a class="article-return" href="../index.html#work">Return to projects</a>
+    </main>
+
+    <footer>
+      <span>© 2026 KHIN EAINDRAY HTUN</span>
+      <span>AI · PRODUCT ENGINEERING · EDUCATION</span>
+    </footer>
+  </div>
+</body>
+</html>
